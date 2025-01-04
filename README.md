@@ -1,1 +1,1 @@
-# To view a live portfolio, [click here] (singhguri.github.io/profile)
+# To view a live portfolio, [click here](https://singhguri.github.io/profile)
