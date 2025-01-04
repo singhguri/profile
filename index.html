@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Gurpreet Singh</title>
+  <style>
+        #home {
+            transition: background-image 0.5s ease-in-out; /* Smooth transition for background image */
+            background-image: url(assets/img/Extras/Portfolio7.png); /* Preload the first image */
+        }
+    </style>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <meta name="image" property="og:image" content="assets/img/Linkedin_bg.png">
+
+  <link href="assets/img/icon.png" rel="icon"> 
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <!-- <a class="navbar-brand js-scroll" href="">Portfolio</a> -->
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#education">Education</a>
+          </li> 
+		  <li class="nav-item">
+            <a class="nav-link js-scroll" href="#work">Work Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#blog">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#service">Certifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#" onclick="downloadResume()">Download Resume</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <script>
+    function downloadResume() {
+      var resumeLink = document.createElement('a');
+      resumeLink.href = 'assets/Gurpreet_Khanna_Resume.pdf';
+      resumeLink.download = 'resume.pdf';
+      resumeLink.click();
+    }
+  </script>
+
+<!--   Visitor Count -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  // Check if visitor count exists in localStorage
+  if (localStorage.getItem('visitorCount')) {
+    // If it exists, retrieve and update the count
+    var count = parseInt(localStorage.getItem('visitorCount'));
+    updateVisitorCount(count);
+  } else {
+    // If it doesn't exist, initialize count to 0
+    var count = 0;
+  }
+
+  // Increment visitor count and update display
+  count++;
+  updateVisitorCount(count);
+
+  // Store updated count in localStorage
+  localStorage.setItem('visitorCount', count);
+  });
+
+function updateVisitorCount(count) {
+  var countElement = document.getElementById('visitor-count');
+  countElement.textContent = count;
+}
+</script>
+
+  
+<div id="home" class="intro route bg-image" style="background-image: url('assets/img/Extras/fsd.png');">
+  <div class="overlay-itro"></div>
+  <div class="intro-content display-table">
+      <div class="table-cell">
+          <div class="container">
+              <h1 class="intro-title mb-4">Gurpreet Singh</h1>
+              <p class="intro-subtitle">
+                  <span class="text-slider-items">
+                      Software Engineer, Full Stack Developer, AI/ML Engineer, Quality Assurance Testing
+                  </span>
+                  <strong class="text-slider"></strong>
+              </p>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".owl-carousel").owlCarousel({
+				loop:true,
+				margin:10,
+				nav:true,
+				responsive:{
+					0:{
+						items:1
+					},
+					600:{
+						items:3
+					},
+					1000:{
+						items:3
+					}
+				}
+			});
+		});
+	</script>
+
+  <script>
+    function popup(element) {
+        var popupContent = element.querySelector("#popup-content");
+        var popup = document.querySelector("#popup");
+        popup.innerHTML = popupContent.innerHTML;
+        popup.style.display = "block";
+    }
+    function closePopup() {
+        var popupContent = document.querySelector("#popup-content");
+        popupContent.style.display = "none";
+        var popup = document.querySelector("#popup");
+        popup.innerHTML = "";
+        popup.style.display = "none";
+    }
+</script>
+
+
+
+  <main id="main">
+
+    <section id="about" class="about-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full" style="border-radius: 1rem;">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-sm-3 "></div>
+                    <div class="col-sm-4 col-md-5">
+                      <div class="about-img">
+                        <img src="assets/img/mypic.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                      </div>
+                    </div>
+                    <div class="col-sm-3 "></div>
+                    
+                  </div>
+                  <div class="skill-mf">
+                    <p class="title-s">Skills</p>
+                    
+                    <div class="progress">
+                    </div>
+                    
+                    <ul>
+                    <li>Languages: Java, JavaScript, Python, TypeScript, C#, SQL, C, C++</li>
+                    <li>Front-end Development: HTML/CSS, Bootstrap, Angular, NodeJS, VueJs, TypeScript, React, Tailwind</li>
+                    <li>Back-end Development: Spring-Boot, Hibernate, Django, WebRTC, Express, JPA, JSON, JDBC, JUnit, Mockito</li>
+                      <li>Database tools: MongoDB, PostgreSQL, PL/SQL, MySQL, R Programming, Firebase</li>
+                      <li>CI/CD: Azure Dev Ops, AWS, Docker, Jenkins, Kubernetes</li>
+                      <li>Project Management: Jira, Confluence, Git, Eclipse, Visual Studio, Microsoft Excel, MS Word, MS PowerPoint</li>
+                      <li>QA: JUnit, Mockito, Selenium, PyTest</li>  
+                    </ul>
+                       <p class="title-s">Software</p>
+                       <div class="progress">
+                      </div>
+                      <ul>
+                        <li>
+                          Ubuntu, Mac OS, Windows, PyCharm, Jupyter Notebook, Colab Notebook, Databricks, VS Code, Microsoft Office
+                        </li>
+                      </ul>
+                      <!-- <p class="title-s">Artificial Intelligence and Machine Learning</p>
+                       <div class="progress">
+                      </div>
+                      <ul>
+                        <li>
+                          Scikit-learn, Tensorflow, Keras, PyTorch, Transformers, YOLO, OpenCV, MediaPipe, dlib, caffe, NLTK, SpaCy, ScanPy, Pandas, NumPy, SciPy, Scikit-learn, matplotlib, seaborn, plotly, Streamlit, PySpark, Semantic Kernel, Promptflow, Langchain, Large Language Models, Generative AI, RAG
+                        </li>
+                      </ul> -->
+                       
+                         
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="about-me pt-4 pt-md-0">
+                    
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        About me
+                      </h5>
+                    </div>
+                    
+                    <p class="lead">
+                      Hi there! 
+					  I'm Gurpreet Singh, a passionate Software Engineer with a Master's degree in Applied Computing specialized from the University of Windsor.
+                    </p>
+                    <p class="lead">
+                      I'm an expert in Full-Stack Development, having over 2 years of work experience at Capgemini India where I worked on various frameworks such as Spring-Boot, Angular/NodeJS, React and Kafka, to name a few. While working at Cap, I had the opportunity to collaborate with talented developers on creating innovative solutions. My role allowed me to develop strong leadership abilities while working in a team environment.
+                    </p>
+                    <p class="lead">
+                      I have been passionate about coding since I was in school, starting with Java and C++ and going all the way towards learning C, Python and Javascript at undergraduate level which enabled me to expand my knowledge across various frameworks such as Spring-Boot, Django, MERN Stack, HTML/CSS with PHP, etc. I became familar with CI/CD while working at Cap, by using tools such as Docker, Kubernetees, Microsoft Azure, AWS(Amazon Web Services) and Git.
+                    </p>
+					<p class="lead">
+                      I use my interest as a motivation to constantly upgrade my knowledge and contribute to the fast-evolving sphere of Information Technolgy. With the advancements in AI in recent times I am constantly keeping myself updating by learning about Generative AI, LLMs, and various Machine Learning concepts while also trying to make as many open source contributions as possible to keep myself ahead in a competitive job market and diversify my skill set.
+                    </p>
+					<p class="lead">
+                      I'm always eager to collaborate with passionate professionals and entrepreneurs. Please feel free to connect with me here to exchange ideas!
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="portfolio-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Education
+              </h3>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="work-box" style="border-radius: 1rem;">
+              <div class="work-img">
+                <img src="assets/img/Education/Srmseal.png" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title">Bachelor of Technology in Information Technology</h2>
+                    <div class="w-more">
+                      <span class="w-date">2016 - 2020</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box" style="border-radius: 1rem;">
+              <div class="work-img">
+                <img src="assets/img/Education/logo-uwin-1.png" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title">Masters in Applied Computing</h2>
+                    <div class="w-more">
+                      <span class="w-date">2023 - 2024</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section id="work" class="portfolio-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Work Experience
+            </h3>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-4">
+          <div class="work-box" style="border-radius: 1rem;">
+            <div class="work-img" style="height: 200px;"> <!-- Set a fixed height -->
+              <img src="assets/img/Work Experience/Harveys_logo.png" alt="" class="img-fluid" style="height: 100%;">
+            </div>
+            <div class="work-content">
+              <div class="row">
+                  <div class="col-sm-12">
+                      <h2 class="w-title"> Associate<br> Harveys 
+                      </h2>
+                      <div class="w-more">
+                          <span class="w-date">June 2024 - Present</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box" style="border-radius: 1rem;">
+            <div class="work-img" style="height: 200px;"> <!-- Set a fixed height -->
+              <img src="assets/img/Work Experience/caplogo.jpeg" alt="" class="img-fluid" style="height: 100%;">
+            </div>
+            <div class="work-content">
+              <div class="row">
+                  <div class="col-sm-12">
+                      <h2 class="w-title">Senior Software Engineer
+                          <br> Capgemini
+                      </h2>
+                      <div class="w-more">
+                          <span class="w-date">Sep 2020 - Dec 2022</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box" style="border-radius: 1rem;">
+            <div class="work-img" style="height: 200px;"> <!-- Set a fixed height -->
+              <img src="https://c.animaapp.com/TPZdvj18/img/image-11-1@2x.png" alt="" class="img-fluid" style="height: 100%;">
+            </div>
+            <div class="work-content">
+              <div class="row">
+                  <div class="col-sm-12">
+                      <h2 class="w-title"> Programming Instructor <br> Genio-Tech Robotics 
+                      </h2>
+                      <div class="w-more">
+                          <span class="w-date">Jan 2024 - April 2024</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </div>
+  </section>
+  
+
+    <div class="testimonials paralax-mf bg-image" style="background-color: #0078ff;">
+      <div class="overlay-mf"></div>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <div id="testimonial-mf" class="owl-carousel owl-theme">
+                      <!-- Recommendation 1 -->
+                      <div class="testimonial-box">
+                          <div class="content-test">
+                              <p class="description lead">
+                                  "Gurpreet has good knowledge in Machine Learning and Data Science. He has been a valuable team member and has a contributed a lot due to his exception Java skills. His ability to come up with quick solution for a problem in data science is out standing. I wish him luck in his future endeavours. I am sure he will be a valuable asset to which ever company he works in."
+                              </p>
+                              <p class="description lead">
+                                  - Saamarthya Varma, Ex-Consultant at Capgemini India
+                              </p>
+                              <span class="comit"><i class="fa fa-quote-right"></i></span>
+                          </div>
+                      </div>
+  
+                      <!-- Recommendation 2 -->
+                      <div class="testimonial-box">
+                          <div class="content-test">
+                              <p class="description lead">
+                                  "Gurpreet and I worked together on various projects of leading investment bank and insurance companies. He worked on different frameworks such as Spring-Boot, Django, MERN Stack, machine learning, etc and possessed his exceptional technical skills. He is a very good communicator and likes to mentor new team members to ensure their smooth onboarding. I wish him all the best for all his future endeavors."
+                              </p>
+                              <p class="description lead">
+                                  - Dhiraj Pawar, Technical Lead at Capgemini India
+                              </p>
+                              <span class="comit"><i class="fa fa-quote-right"></i></span>
+                          </div>
+                      </div>
+  
+                      <!-- Recommendation 3 -->
+                      <div class="testimonial-box">
+                        <div class="content-test">
+                            <p class="description lead">
+                                "Gurpreet is really a hard working, polite & dedicated ML Engineer. He has taught coding to young school kids while explaining several ML concepts in a very subtle manner. I recommend him for having a person in your team/company if you are looking for a self learner & who is really passionate & loyal for his work. Thanks man! for all your hard work you did for Artifutech."
+                            </p>
+                            <p class="description lead">
+                                - Peri Mahmoud, CEO at Genio-Tech Robotics 
+                            </p>
+                            <span class="comit"><i class="fa fa-quote-right"></i></span>
+                        </div>
+                      </div>
+
+                      <!-- Recommendation 4 -->
+                      <div class="testimonial-box">
+                        <div class="content-test">
+                            <p class="description lead">
+                                "Gurpreet is one of the best among all people I have ever met and is a loyal colleague, understands complex matters. He is a strong and goal oriented team player; used to dig into problems & work onto it until & unless he finds the solution. Highly recommended."
+                            </p>
+                            <p class="description lead">
+                                - Raman Raghav, Senior Software Engineer at Uniq Technologies
+                            </p>
+                            <span class="comit"><i class="fa fa-quote-right"></i></span>
+                        </div>
+                      </div>
+  
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  
+
+    <section id="blog" class="blog-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Projects
+              </h3>
+              <!-- <p class="subtitle-a">
+                    Links:
+                  </p> -->
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service-box">
+              <div id="carouselGenio" class="carousel slide" data-ride="carousel1">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a href="https://github.com/officialjunglee/GENIO-TECH"><img src="assets/img/Extras/genio/gt1.png" alt="" class="img-fluid"></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://github.com/officialjunglee/GENIO-TECH"><img src="assets/img/Extras/genio/gt2.png" alt="" class="img-fluid"></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://github.com/officialjunglee/GENIO-TECH"><img src="assets/img/Extras/genio/gt3.png" alt="" class="img-fluid"></a>
+                  </div>
+                  <!-- Add more carousel items with additional images here -->
+                </div>
+                <a class="carousel-control-prev" href="#carouselGenio" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselGenio" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Genio-Tech E-learning App</h6>
+                  </div>
+                  <div class="card-description">
+                    <p class="description">E-learning wesbite with the capacity to host online classes with a whiteboard interface and payment gateway to register students in realtime</p>
+                    <p class="tech-stack">Tech stack: Python, HTML, Bootstrap/CSS, JavaScript, Django, WebRTC,Microsoft Azure, PostgreSQL</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Project 2-->
+          <div class="col-md-4">
+            <div class="service-box">
+              <div id="carouselDgx" class="carousel slide" data-ride="carousel2">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a href="https://github.com/officialjunglee/DIGIX"><img src="assets/img/Extras/digix/dg1.png" alt="" class="img-fluid"></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://github.com/officialjunglee/DIGIX"><img src="assets/img/Extras/digix/dg2.png" alt="" class="img-fluid"></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://github.com/officialjunglee/DIGIX"><img src="assets/img/Extras/digix/dg3.png" alt="" class="img-fluid"></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://github.com/officialjunglee/DIGIX"><img src="assets/img/Extras/digix/dg4.png" alt="" class="img-fluid"></a>
+                  </div>
+                  <!-- Add more carousel items with additional images here -->
+                </div>
+                <a class="carousel-control-prev" href="#carouselDgx" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselDgx" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Digix Crypto Wallet</h6>
+                  </div>
+                  <div class="card-description">
+                    <p class="description">Cryptocurrency platform enabling users to buy, store, and transact with cryptocurrencies while maintaining their personal crypto wallet, integrating Stripe payment gateway for seamless transactions.</p>
+                    <p class="tech-stack">Tech stack: Python, Django, HTML, Bootstrap/CSS, JavaScript, Stripe</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add similar HTML structure for Kaggle and Publication cards -->
+          <div class="col-md-4">
+            <div class="service-box">
+              <div id="carouselDgx" class="carousel slide" data-ride="carousel2">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a href="https://github.com/officialjunglee"><img src="assets/img/Extras/git.png" alt="" class="img-fluid"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">GitHub</h6>
+                  </div>
+                  <div class="card-description">
+                    <p class="description">A collection of projects hosted on GitHub.</p>
+                    <p class="tech-stack">Tech stack: Java, Python, C, JavaScript, Django, React, Angular, Spring-Boot, NodeJS, TypeScript</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        
+        
+      </div>
+    </section>
+    
+
+    <section id="service" class="services-mf pt-5 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Certifications
+              </h3>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+      <div class="row">
+      <div class="col-md-12">
+			<div class="service-carousel">
+			  <div class="owl-carousel owl-theme"> <!--Changes -->
+          <div class="item">
+            <div class="service-box">
+              <div class="work-img">
+                <a href="https://www.linkedin.com/learning/certificates/69a7debf9b32ba45f35746d0ddf84a7795bef0dc26c931008fbc0306d92a5ecc"><img src="assets/img/Certi/link.png" alt="" class="img-fluid"></a>
+              </div>
+              <div class="service-content">
+                <h2 class="w-title"> Getting started with Microsoft Azure<br> LinkedIn Learning</h2>
+                <p class="w-ctegory">
+                  Issued Jun 2023
+                </p>
+              </div>
+			    </div>
+        </div>
+
+			    <div class="item">
+            <div class="service-box">
+              <div class="work-img">
+                <a href="https://www.linkedin.com/learning/certificates/a01fdb71d9a863be3732f21ed6eb9f8b599a56b354f3654df80daa3bba9db631"><img src="assets/img/Certi/link.png" alt="" class="img-fluid"></a>
+              </div>
+              <div class="service-content">
+                <h2 class="w-title"> Introduction to Spark SQL and DataFrames <br> LinkedIn Learning</h2>
+                <p class="w-ctegory">
+                  Issued Jul 2023
+                </p>
+              </div>
+            </div>
+          </div>
+          
+		  
+          
+		  <div class="item">
+            <div class="service-box">
+              <div class="work-img">
+                <a href="https://www.linkedin.com/learning/certificates/b50bfa45a79d67e7801546aab5428154c3b04a2d59c2e1592c615ae05964105a"><img src="assets/img/Certi/link.png" alt="" class="img-fluid"></a>
+              </div>
+              <div class="service-content">
+                <h2 class="w-title"> Learning Hadoop <br> LinkedIn Learning</h2>
+                <p class="w-ctegory">
+                  Issued Jun 2023
+                </p>
+              </div>
+            </div>
+          </div>
+          
+		  <div class="item">
+            <div class="service-box">
+              <div class="work-img">
+                <a href="https://www.linkedin.com/learning/certificates/c7c9eb5826e6ed2ab23757474d5f945356ca62e814dd6871ee53d9602be0d699"><img src="assets/img/Certi/link.png" alt="" class="img-fluid"></a>
+              </div>
+              <div class="service-content">
+                <h2 class="w-title">Unix Essential Training <br> LinkedIn Learning</h2>
+                <p class="w-ctegory">
+                  Issued May 2023
+                </p>
+              </div>
+            </div>
+          </div>
+          
+		  <div class="item">
+            <div class="service-box">
+              <div class="work-img">
+                <a href="https://www.linkedin.com/learning/certificates/a43e016722dab58573c99092e391a776b27a752f20fae31b2a92098f8181fd10"><img src="assets/img/Certi/link.png" alt="" class="img-fluid"></a>
+              </div>
+              <div class="service-content">
+                <h2 class="w-title">Planning and Releasing Software with Jira <br> LinkedIn Learning</h2>
+                <p class="w-ctegory">
+                  Issued Apr 2023
+                </p>
+              </div>
+            </div>
+          </div>
+          
+		  <div class="item">
+            <div class="service-box">
+              <div class="work-img">
+                <a href="https://www.linkedin.com/learning/certificates/dbfb568643176495a50299ea8360fbc46213969522e0de819039a1866048b6da"><img src="assets/img/Certi/link.png" alt="" class="img-fluid"></a>
+              </div>
+              <div class="service-content">
+                <h2 class="w-title"> Programming Foundations: Software Testing/QA <br> LinkedIn Learning</h2>
+                <p class="w-ctegory">
+                  Issued Apr 2023
+                </p>
+              </div>
+            </div>
+          </div>
+          
+		  <div class="item">
+            <div class="service-box">
+              <div class="work-img">
+                <a href="https://www.linkedin.com/learning/certificates/51d9b855254f06ab958fb707943e26befee78a60e0b4d8249338f97fc8563bf4"><img src="assets/img/Certi/link.png" alt="" class="img-fluid"></a>
+              </a>
+              </div>
+              <div class="service-content">
+                <h2 class="w-title"> Software Testing Foundations: Test Management <br> LinkedIn Learning</h2>
+                <p class="w-ctegory">
+                  Issued Apr 2023
+                </p>
+              </div>
+            </div>
+          </div>
+          
+		  <div class="item">
+            <div class="service-box">
+              <div class="work-img">
+              <a href="https://www.linkedin.com/learning/certificates/d1d8378338036a52ae0555aad9315658469fb4c13322072a7eb832c7c25cd6d9"><img src="assets/img/Certi/link.png" alt="" class="img-fluid"></a>
+              </a>
+              </div>
+              <div class="service-content">
+                <h2 class="w-title"> Enterprise Agile: Changing Your Culture <br> LinkedIn Learning</h2>
+                <p class="w-ctegory">
+                  Issued Apr 2023
+                </p>
+              </div>
+            </div>
+          </div>
+          
+		  <div class="item">
+            <div class="service-box">
+              <div class="work-img">
+                <a href="https://www.linkedin.com/learning/certificates/259d204ed723df91db100f89ff8dec4f359fe716bcb2667457bbf75f19441d00"><img src="assets/img/Certi/link.png" alt="" class="img-fluid"></a>
+              </div>
+              <div class="service-content">
+                <h2 class="w-title"> Designing RESTful APIs</h2>
+                <p class="w-ctegory">
+                  Issued Apr 2023
+                </p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="item">
+            <div class="service-box">
+              <div class="work-img">
+                <a href="https://www.linkedin.com/learning/certificates/73fc2b0c1917e4149869f54c78bc4ecbcb4c01b8069a5dba37ded829e58944af"><img src="assets/img/Certi/link.png" alt="" class="img-fluid"></a>
+              </div>
+              <div class="service-content">
+                <h2 class="w-title"> Software Development Life Cycle (SDLC) </h2>
+                <p class="w-ctegory">
+                  Issued Apr 2023
+                </p>
+              </div>
+            </div>
+          </div>
+		  
+          <div class="item">
+            <div class="service-box">
+              <div class="work-img">
+                <a href="https://www.linkedin.com/learning/certificates/9d97aad668c32a8008652a5cc83021cd2de6dd08be9cce0282397b3b73e8e296"><img src="assets/img/Certi/link.png" alt="" class="img-fluid"></a>
+              </div>
+              <div class="service-content">
+                <h2 class="w-title"> Project Management Foundations: Requirements <br> LinkedIn Learning</h2>
+                <p class="w-ctegory">
+                  Issued Apr 2023
+                </p>
+              </div>
+            </div>
+          </div>
+		  
+		  <div class="item">
+            <div class="service-box">
+              <div class="work-img">
+                <a href="https://www.linkedin.com/learning/certificates/1027825d450dfba1172cb27995860cfd13e81ecb50d944a7e274ad14954718a4"><img src="assets/img/Certi/link.png" alt="" class="img-fluid"></a>
+              </div>
+              <div class="service-content">
+                <h2 class="w-title"> Software Design: From Requirements to Release<br> LinkedIn Learning</h2>
+                <p class="w-ctegory">
+                  Issued Apr 2023
+                </p>
+              </div>
+            </div>
+          </div>
+		  
+		  
+        </div>
+			</div>
+      </div>
+      </div>
+    </section>
+
+    <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-color: #0078ff;">
+      <center>
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-mf">
+              <div id="contact" class="box-shadow-full" style="border-radius: 1rem;">
+                <div class="row">
+              
+                  </div>
+                  <div class="col-md-6">
+                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <div class="title-box text-center">
+                      <h5 class="title-a">
+                        Contact
+                      </h5>
+                      <div class="line-mf"></div>
+                    </div>
+                    </div>
+                    <div class="more-info">
+                      <ul class="list-ico">
+                        <li><span class="ion-email"></span> atikhanna.geofficial@gmail.com</li>
+                      </ul>
+                    </div>
+                    <div class="socials">
+                      <ul>
+                        <li><a href="https://www.linkedin.com/in/Gurpreet98/" target="_blank"><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
+                        <li><a href="https://github.com/officialjunglee" target="_blank"><span class="ico-circle"><i class="ion-social-github"></i></span></a></li>
+                        <li><a href="https://huggingface.co/OfficialJunglee" target="_blank"><span class="ico-circle"><img class="img-fluid w-60" src="assets/img/Footer/hflogo.png"></img></span></a></li>
+                      </ul>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="copyright-box">
+			  <p id="visitor-counter">Site Visits: <span id="visitor-count">0</span></p>
+                          <p class="copyright">&copy; Copyright <strong>Gurpreet Singh</strong>. All Rights Reserved</p>
+                          <!-- <div class="credits">
+                            Designed by <a href="https://harbhajan21.github.io/hs21.github.io/"><strong>Harbhajan Singh</strong></a>
+                          </div> -->
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+      </center>
+    </section>
+    
+    
+    <!-- Include Bootstrap and jQuery JavaScript files if not already included -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+z8vwK/iz2goFk4fsXTAn1L3pTl2a6OyJX+qbhj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+V5CGuw5V+9ZsgnxE5i/6G7Bq//wfs5CEYLxvN49vYdX4M0z8r5G5FfFib" crossorigin="anonymous"></script>
+    
+  </main>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/jquery.counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="https://kit.fontawesome.com/577eb74294.js" crossorigin="anonymous"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
